@@ -1,0 +1,13 @@
+@import './variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: $dark_default_col;
+  color: $light_default_col;
+}
