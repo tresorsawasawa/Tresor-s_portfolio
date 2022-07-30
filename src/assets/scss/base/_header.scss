@@ -1,0 +1,14 @@
+.heder_container {
+  border: solid red;
+}
+
+.closeButton,
+.hamburger.open,
+.nav_list {
+  display: none;
+}
+
+.closeButton.open,
+.nav_list.open {
+  display: block;
+}

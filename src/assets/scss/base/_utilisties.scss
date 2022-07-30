@@ -11,3 +11,9 @@ body {
   background-color: $dark_default_col;
   color: $light_default_col;
 }
+
+a {
+  text-decoration: none;
+}
+
+.clickable { cursor: pointer; }
