@@ -38,7 +38,7 @@ const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleShowLinks = () => {
+  const handleShowMenu = () => {
     setIsOpen(!isOpen);
   };
 
@@ -48,56 +48,77 @@ const Header = () => {
 
   return (
     <header className="header_container" ref={menu}>
-      <nav>
-        <div className="logo">
-          <Link
-            to="home"
-            spy
-            smooth
-            duration={500}
-            delay={800}
-            className="logo-area"
+      <div className="header_content">
+        <nav className="logo_hamb_container">
+          <div className="logo clickable">
+            <Link
+              to="home"
+              spy
+              smooth
+              duration={500}
+              delay={800}
+              className="logo-area"
+            >
+              Tresor
+              <span>.</span>
+            </Link>
+          </div>
+
+          <div
+            onClick={() => handleShowMenu()}
+            className={
+              isOpen
+                ? 'hamburger_container open clickable'
+                : 'hamburger_container clickable'
+            }
+            aria-hidden="true"
           >
-            Tresor
-            <span>.</span>
-          </Link>
-        </div>
+            <FaBars className="hamburger" />
+          </div>
+        </nav>
 
-        <div
-          onClick={() => handleShowLinks()}
-          className={isOpen ? 'hamburger open' : 'hamburger'}
-          aria-hidden="true"
+        <nav
+          className={
+            isOpen
+              ? 'nav_container menu_container open close'
+              : 'menu_container remove'
+          }
+          ref={navbar}
         >
-          <FaBars />
-        </div>
-      </nav>
+          <div
+            onClick={() => handleCloseMenu()}
+            className={
+              isOpen
+                ? 'closeMenu_container open clickable'
+                : 'closeMenu_container clickable'
+            }
+            aria-hidden="true"
+          >
+            <AiOutlineClose className="closeMenu" />
+          </div>
 
-      <nav className="nav_container" ref={navbar}>
-        <div
-          onClick={() => handleCloseMenu()}
-          className={isOpen ? 'closeButton open' : 'closeButton'}
-          aria-hidden="true"
-        >
-          <AiOutlineClose />
-        </div>
-        <ul className={isOpen ? 'nav_list open' : 'nav_list'}>
-          {links.map((link) => (
-            <li key={link.id}>
-              <Link
-                to={link.to}
-                spy
-                smooth
-                duration={500}
-                delay={800}
-                key={link.id}
-                className="clickable"
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <ul className={isOpen ? 'nav_list open' : 'nav_list'}>
+            {links.map((link) => (
+              <li key={link.id}>
+                <Link
+                  to={link.to}
+                  spy
+                  smooth
+                  duration={500}
+                  delay={800}
+                  key={link.id}
+                  onClick={() => handleShowMenu()}
+                  className={
+                    isOpen ? 'nav_link clickable' : 'menu_container remove'
+                  }
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
