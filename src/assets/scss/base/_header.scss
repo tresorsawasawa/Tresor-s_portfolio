@@ -1,14 +1,88 @@
-.heder_container {
-  border: solid red;
+@import './mixins';
+@import './variables';
+
+.header_container {
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+
+  .header_content {
+    width: 100%;
+
+    .logo_hamb_container {
+      @include flex-between(row);
+
+      .hamburger_container {
+        @include flex-center(row);
+
+        background-color: $white_default_col;
+        position: absolute;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        right: 1rem;
+        z-index: 99999;
+
+        .hamburger {
+          color: $dark_default_col;
+          height: 1.5rem;
+          width: 1.6rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+
+    .closeMenu_container {
+      display: none;
+    }
+
+    .hamburger_container.open,
+    .nav_list {
+      display: none;
+    }
+
+    .closeMenu_container.open {
+      @include flex-center(row);
+
+      background-color: $white_default_col;
+      position: absolute;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      top: 0.5rem;
+      right: 1rem;
+      z-index: 99999;
+
+      .closeMenu {
+        color: $dark_default_col;
+        height: 1.8rem;
+        width: 1.8rem;
+        padding: 0.2rem;
+        top: 0.5rem;
+        right: 1rem;
+      }
+    }
+
+    .nav_list.open {
+      display: block;
+    }
+  }
 }
 
-.closeButton,
-.hamburger.open,
-.nav_list {
+.menu_container {
   display: none;
 }
 
-.closeButton.open,
-.nav_list.open {
-  display: block;
+.menu_container.open {
+  @include flex-center(colum);
+
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
 }
+
+.menu_container.remove { display: none; }

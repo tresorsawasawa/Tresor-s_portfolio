@@ -12,8 +12,12 @@ body {
   color: $light_default_col;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 .clickable { cursor: pointer; }
+
+// section { width: 95%; }
+
+main {
+  display: none;
+}
