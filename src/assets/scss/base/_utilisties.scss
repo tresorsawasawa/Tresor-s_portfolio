@@ -7,13 +7,26 @@
   list-style: none;
 }
 
+html {
+  font-family: $Quick_sand;
+  min-width: 320px;
+}
+
 body {
   background-color: $dark_default_col;
   color: $light_default_col;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 .clickable { cursor: pointer; }
+
+// section { width: 95%; }
+
+main {
+  display: none;
+}
+
+.pink_color {
+  color: $pink_color_prim_color;
+}

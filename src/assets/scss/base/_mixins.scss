@@ -1,0 +1,40 @@
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-between($direction) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-evenly($direction) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-end($direction) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: $direction;
+}
+
+@mixin flex-start($direction) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
