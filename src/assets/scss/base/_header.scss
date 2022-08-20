@@ -13,6 +13,13 @@
     .logo_hamb_container {
       @include flex-between(row);
 
+      .logo {
+        h1 {
+          font-weight: 900;
+          font-size: 2.5rem;
+        }
+      }
+
       .hamburger_container {
         @include flex-center(row);
 
@@ -50,7 +57,7 @@
       border-radius: 50%;
       height: 2rem;
       width: 2rem;
-      top: 0.5rem;
+      top: 1rem;
       right: 1rem;
       z-index: 99999;
 
@@ -65,7 +72,33 @@
     }
 
     .nav_list.open {
-      display: block;
+      @include flex-end(column);
+
+      padding: 3.5rem 0.7rem;
+      position: relative;
+
+      .menu_text {
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        transform: rotate(-270deg);
+        color: $pink_color_prim_color;
+        font-size: 0.7rem;
+      }
+
+      .nav_item {
+        margin-bottom: 1rem;
+
+        a {
+          font-weight: 700;
+          font-size: 2rem;
+
+          .num {
+            font-size: 1rem;
+            margin-left: 0.5rem;
+          }
+        }
+      }
     }
   }
 }
@@ -75,14 +108,17 @@
 }
 
 .menu_container.open {
-  @include flex-center(colum);
-
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  background-color: red;
+  background-color: $bg_col_3;
   top: 0;
   left: 0;
   right: 0;
   height: 100vh;
+  padding-top: 4rem;
 }
 
-.menu_container.remove { display: none; }
+.menu_container.remove {
+  display: none;
+}

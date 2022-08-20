@@ -12,10 +12,17 @@
   flex-direction: $direction;
 }
 
+@mixin flex-evenly($direction) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: $direction;
+}
+
 @mixin flex-end($direction) {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: end;
   flex-direction: $direction;
 }
 
