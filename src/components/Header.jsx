@@ -38,7 +38,6 @@ const Header = () => {
       name: 'Testimonials',
       to: 'testimonials',
       class: '',
-
     },
     {
       id: 5,
@@ -55,14 +54,16 @@ const Header = () => {
   };
 
   const handleHover = (link) => {
-    links.map((item) => {
-      if (item.id === link.id) {
-        item.class = 'focusOut focused clickable';
-      } else {
-        item.class = 'focusOut clickable';
-      }
-      return item;
-    });
+    // links.map((item) => {
+    //   if (item.id === link.id) {
+    //     item.class = 'focusOut focused clickable';
+    //   } else {
+    //     item.class = 'focusOut clickable';
+    //   }
+    //   return item;
+    // });
+
+    console.log(link);
   };
 
   const handleHoverOut = () => {
@@ -158,79 +159,86 @@ const Header = () => {
           <div className="contacts_container">
             <div className="contacts_text">
               <span className="email">tresorsawasawa@gmail.com</span>
-              <br />
-              <span>+(250) 786 330 283</span>
-              <br />
-              <span>Kigali Rwanda, KG 794 ST</span>
+              <span className="number">+(250) 786 330 283</span>
+              <span className="address">Kigali-Rwanda, KG 794 ST</span>
             </div>
 
-            <div className="contact-details-icon-wrapper">
-              <ul className="contact-icon-item">
-                <li>
-                  <a
-                    href="https://github.com/tresorsawasawa"
-                    target="_blank"
-                    rel="noreferrer noopener"
+            <ul className="contact_icons_container">
+              <li className="icon_item">
+                <a
+                  href="https://github.com/tresorsawasawa"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="icon_link"
+                >
+                  <IconContext.Provider
+                    value={{ className: 'header-links-icon' }}
                   >
-                    <IconContext.Provider
-                      value={{ className: 'header-links-icon' }}
-                    >
-                      <AiOutlineGithub />
-                    </IconContext.Provider>
-                  </a>
-                </li>
+                    <AiOutlineGithub className="icon" />
+                  </IconContext.Provider>
+                </a>
+              </li>
 
-                <li>
-                  <a
-                    href="https://angel.co/u/tresor-sawasawa"
-                    target="_blank"
-                    rel="noreferrer noopener"
+              <li className="icon_item">
+                <a
+                  href="https://angel.co/u/tresor-sawasawa"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="icon_link"
+                >
+                  <IconContext.Provider
+                    value={{ className: 'header-links-icon' }}
                   >
-                    <IconContext.Provider
-                      value={{ className: 'header-links-icon' }}
-                    >
-                      <FaAngellist />
-                    </IconContext.Provider>
-                  </a>
-                </li>
+                    <FaAngellist className="icon" />
+                  </IconContext.Provider>
+                </a>
+              </li>
 
-                <li>
-                  <a href="https://twitter.com/tresorsawasawa" target="blank">
-                    <IconContext.Provider
-                      value={{ className: 'header-links-icon' }}
-                    >
-                      <FaTwitter />
-                    </IconContext.Provider>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.instagram.com/tresorsawasawa/"
-                    target="blank"
+              <li className="icon_item">
+                <a
+                  href="https://twitter.com/tresorsawasawa"
+                  target="blank"
+                  rel="noreferrer noopener"
+                  className="icon_link"
+                >
+                  <IconContext.Provider
+                    value={{ className: 'header-links-icon' }}
                   >
-                    <IconContext.Provider
-                      value={{ className: 'header-links-icon' }}
-                    >
-                      <FaInstagram />
-                    </IconContext.Provider>
-                  </a>
-                </li>
+                    <FaTwitter className="icon" />
+                  </IconContext.Provider>
+                </a>
+              </li>
 
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/tresor-sawasawa/"
-                    target="blank"
+              <li className="icon_item">
+                <a
+                  href="https://www.instagram.com/tresorsawasawa/"
+                  target="blank"
+                  rel="noreferrer noopener"
+                  className="icon_link"
+                >
+                  <IconContext.Provider
+                    value={{ className: 'header-links-icon' }}
                   >
-                    <IconContext.Provider
-                      value={{ className: 'header-links-icon' }}
-                    >
-                      <AiFillLinkedin />
-                    </IconContext.Provider>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                    <FaInstagram className="icon" />
+                  </IconContext.Provider>
+                </a>
+              </li>
+
+              <li className="icon_item">
+                <a
+                  href="https://www.linkedin.com/in/tresor-sawasawa/"
+                  target="blank"
+                  rel="noreferrer noopener"
+                  className="icon_link"
+                >
+                  <IconContext.Provider
+                    value={{ className: 'header-links-icon' }}
+                  >
+                    <AiFillLinkedin className="icon" />
+                  </IconContext.Provider>
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>

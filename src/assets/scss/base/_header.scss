@@ -122,3 +122,47 @@
 .menu_container.remove {
   display: none;
 }
+
+
+.contacts_container {
+  .contacts_text {
+    @include flex-center(column);
+    font-size: 1.2rem;
+
+    .number,
+    .email {
+      color: $pink_color_prim_color;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid $pink_color_prim_color;
+    }
+
+    .address {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .contact_icons_container {
+    @include flex-center(row);
+
+    .icon_item {
+      margin: 0 0.5rem;
+      font-size: 1.3rem;
+
+      .icon_link {
+        color: $white_default_col;
+
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          color: $pink_color_prim_color;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+.icon:hover {
+  transition: all 1s ease;
+  transform: scale(1.5);
+}
