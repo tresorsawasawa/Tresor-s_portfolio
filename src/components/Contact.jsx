@@ -104,7 +104,7 @@ const Contact = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/barackm" target="blank">
+                <a href="https://github.com/tresorsawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'contact-link-icon' }}
                   >
@@ -113,7 +113,7 @@ const Contact = () => {
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/BarackMukelenga" target="blank">
+                <a href="https://twitter.com/TresorSawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'contact-link-icon' }}
                   >
@@ -123,7 +123,7 @@ const Contact = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/baraka-mukelenga/"
+                  href="https://www.linkedin.com/in/tresor-sawasawa/"
                   target="blank"
                 >
                   <IconContext.Provider
@@ -244,7 +244,7 @@ const Contact = () => {
                 </a>
               </li>
               <li data-aos="fade-right">
-                <a href="https://github.com/barackm" target="blank">
+                <a href="https://github.com/tresorsawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'contact-link-icon' }}
                   >
@@ -253,7 +253,7 @@ const Contact = () => {
                 </a>
               </li>
               <li data-aos="fade-right">
-                <a href="https://twitter.com/BarackMukelenga" target="blank">
+                <a href="https://twitter.com/TresorSawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'contact-link-icon' }}
                   >
@@ -263,7 +263,7 @@ const Contact = () => {
               </li>
               <li data-aos="fade-right">
                 <a
-                  href="https://www.linkedin.com/in/baraka-mukelenga/"
+                  href="https://www.linkedin.com/in/tresor-sawasawa/"
                   target="blank"
                 >
                   <IconContext.Provider

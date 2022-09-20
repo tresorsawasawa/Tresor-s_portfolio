@@ -43,7 +43,7 @@ const Home = () => (
           </a>
         </li>
         <li>
-          <a href="https://github.com/barackm" target="blank">
+          <a href="https://github.com/tresorsawasawa" target="blank">
             <IconContext.Provider
               value={{ className: 'sidebar-link-icon' }}
             >
@@ -52,7 +52,7 @@ const Home = () => (
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/BarackMukelenga" target="blank">
+          <a href="https://twitter.com/TresorSawasawa" target="blank">
             <IconContext.Provider
               value={{ className: 'sidebar-link-icon' }}
             >
@@ -62,7 +62,7 @@ const Home = () => (
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/baraka-mukelenga/"
+            href="https://www.linkedin.com/in/tresor-sawasawa/"
             target="blank"
           >
             <IconContext.Provider

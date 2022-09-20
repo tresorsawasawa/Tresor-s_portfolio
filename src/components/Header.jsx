@@ -193,7 +193,7 @@ class Header extends Component {
                     <FaFacebookF />
                   </IconContext.Provider>
                 </a>
-                <a href="https://twitter.com/BarackMukelenga" target="blank">
+                <a href="https://twitter.com/TresorSawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'header-links-icon' }}
                   >
@@ -211,7 +211,7 @@ class Header extends Component {
                   </IconContext.Provider>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/baraka-mukelenga/"
+                  href="https://www.linkedin.com/in/tresor-sawasawa/"
                   target="blank"
                 >
                   <IconContext.Provider
@@ -220,7 +220,7 @@ class Header extends Component {
                     <AiFillLinkedin />
                   </IconContext.Provider>
                 </a>
-                <a href="https://github.com/barackm" target="blank">
+                <a href="https://github.com/tresorsawasawa" target="blank">
                   <IconContext.Provider
                     value={{ className: 'header-links-icon' }}
                   >
