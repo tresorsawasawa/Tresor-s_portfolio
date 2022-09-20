@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { IconContext } from 'react-icons/lib';
 import { FaMapMarkerAlt } from 'react-icons/fa';
@@ -28,9 +29,7 @@ const Contact = () => {
             <h3 className="hero-hello">Contact me</h3>
           </div>
           <h2 className="slogan">
-            Let
-            {'&apos;'}
-            s do it together
+            Let's do it together
           </h2>
 
           <p className="about-work">
@@ -170,9 +169,7 @@ const Contact = () => {
             <h3 className="hero-hello">Contact me</h3>
           </div>
           <h2 className="slogan" data-aos="fade-down">
-            Let
-            {'&apos;'}
-            s do it together
+            Let's do it together
           </h2>
 
           <p className="about-work" data-aos="fade-down">
@@ -203,7 +200,7 @@ const Contact = () => {
                       <BsEnvelope />
                     </IconContext.Provider>
                   </div>
-                  barackmukelenga100@gmail.com
+                  tresorsawasawa@gmail.com
                 </a>
               </li>
               <li data-aos="fade-down-right">

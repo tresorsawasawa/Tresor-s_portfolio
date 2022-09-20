@@ -81,7 +81,7 @@ const Home = () => (
           <h3 className="hero-hello">Hi there,</h3>
         </div>
         <div className="hero-text-wrapper" data-aos="fade-up-right">
-          I am Baraka Mukelenga
+          I am Tresor Sawasawa
         </div>
         <div className="profession-area">
           <h3 className="hero-profession" data-aos="fade-up-right">

@@ -173,13 +173,13 @@ class Header extends Component {
           </div>
           <div className="contact-details">
             <div className="contact-text">
-              <p>barackmukelenga100@gmail.com</p>
+              <p>tresorsawasawa@gmail.com</p>
               {' '}
               <br />
-              <p>+(250) 780-083-122</p>
+              <p>+(250) 786 330 283</p>
               {' '}
               <br />
-              <span>Kigali Rwanda, KK 8 Av 190</span>
+              <span>Kigali Rwanda, KG 794 ST</span>
             </div>
             <div className="contact-details-icon-wrapper">
               <div className="contact-icon-item">

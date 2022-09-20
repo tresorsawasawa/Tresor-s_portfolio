@@ -22,7 +22,7 @@ const About = () => (
       </h2>
 
       <p className="about-work" data-aos="fade-up">
-        I'm Baraka Mukelenga a software developer specialized in different
+        I'm Tresor Sawasawa a software developer specialized in different
         technologies ,Building web applications, Mobile apps and beautiful
         websites for companies. Love digging into hard problems, learning
         new languages and technologies.

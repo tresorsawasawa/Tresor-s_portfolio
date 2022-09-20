@@ -111,7 +111,7 @@ const Footer = () => (
             href="https://www.linkedin.com/in/baraka-mukelenga/"
             className="name"
           >
-            Baraka Mukelenga
+            Tresor Sawasawa
           </a>
           , All right reserved
         </p>

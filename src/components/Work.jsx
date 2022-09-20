@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import web from '../assets/images/web.png';
 
@@ -98,9 +99,7 @@ const Work = () => (
       </h2>
 
       <p className="about-work" data-aos="fade-up">
-        I
-        {'&apos;'}
-        m Building scalable web applications, Mobile apps and beautiful
+        I'm Building scalable web applications, Mobile apps and beautiful
         websites for companies.
       </p>
     </div>
