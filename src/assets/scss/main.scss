@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "pacifico";
+  src: url("../fonts/Opificio_neue-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Cera Pro Black Italic";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Black-Italic.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Bold.otf);
+}
+
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url(../fonts/cera-pro-sv/Cera-Pro-Light.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import "./variables/colors";
+@import "./variables/variables";
+@import "./mixins/media-queries";
+@import "./mixins/display";
+@import "./variables/transition";
+@import "./default";
+@import "./pages/header";
+@import "./pages/loading";
+@import "./pages/home";
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/portfolio";
+@import "./pages/contact";
+@import "./pages/footer";
+@import "./pages/common";

@@ -1,0 +1,165 @@
+.contact-page-main-container {
+  @include flexCenter(row);
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: $border;
+
+  .contact-page-wrapper {
+    .contact-details-wrapper {
+      margin-left: 2rem;
+
+      .about-work {
+        margin-right: 2rem;
+      }
+
+      .contact-address-wrapper {
+        @include flexCenter(column);
+
+        align-items: flex-start;
+        margin-top: 2rem;
+
+        ul {
+          padding: 0;
+
+          li {
+            margin-bottom: 1rem;
+
+            a {
+              @include flexCenter(row);
+
+              justify-content: flex-start;
+              color: $lightBlue;
+              font-size: 1.1rem;
+
+              .address-icon-wrapper {
+                width: 2rem;
+                height: 2rem;
+                background-color: rgba($primary, 0.2);
+                margin-right: 1rem;
+                border-radius: 0.2rem;
+
+                @include flexCenter(row);
+
+                .contact-address-icon {
+                  width: auto;
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .contact-links-wrapper {
+        margin-top: 2rem;
+
+        ul {
+          @include flexCenter(row);
+
+          padding: 0;
+          justify-content: flex-start;
+
+          li {
+            margin-right: 0.6rem;
+
+            a {
+              width: auto;
+              padding: 0;
+
+              &:first-child {
+                margin-left: -1rem;
+              }
+
+              &:hover {
+                .contact-address-icon {
+                  color: $primary !important;
+                }
+              }
+
+              .contact-link-icon {
+                font-size: 1.3rem;
+                color: $lightBlue;
+
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form-wrapper {
+      margin-left: 2rem;
+      padding-top: 2rem;
+
+      @include flexCenter(row);
+
+      form {
+        width: 90%;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .contact-form-wrapper.redirect-form-contact {
+    @include flexCenter(column);
+
+    text-align: center;
+    flex-direction: column;
+    margin-right: 2rem;
+  }
+
+  .form-submission-message {
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .show-form-btn {
+    color: $lightBlue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+
+    .show-contact-form {
+      margin: 0 0.5rem;
+      color: $primary;
+      cursor: pointer;
+      display: inline;
+    }
+  }
+
+  @include min-width($tablet) {
+    .contact-page-wrapper {
+      @include flexCenter(row);
+
+      .contact-details-wrapper {
+        margin-left: 4rem;
+        flex: 1;
+      }
+
+      .contact-form-wrapper {
+        justify-content: flex-start;
+        flex: 1;
+        margin-right: 4rem;
+      }
+    }
+  }
+
+  @include min-width($desktop) {
+    .contact-page-wrapper {
+      @include flexCenter(row);
+
+      .contact-details-wrapper {
+        margin-left: 8rem;
+      }
+
+      .contact-form-wrapper {
+        margin-right: 8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+.home-hello-wrapper {
+  @include flexCenter(row);
+
+  justify-content: flex-start;
+
+  .hello-line {
+    width: 2.5rem;
+    height: 2px;
+    background-color: $primary;
+    margin-right: 0.5rem;
+  }
+
+  .hero-hello {
+    color: $primary;
+    margin: 0;
+  }
+
+  @include min-width($tablet) {
+    .hello-line {
+      width: 2.5rem;
+    }
+
+    .hero-hello {
+      font-size: 1.7rem;
+    }
+  }
+
+  @include min-width($desktop) {
+    .hello-line {
+      width: 3.5rem;
+    }
+
+    .hero-hello {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.slogan {
+  color: $white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.about-work {
+  color: $lightBlue;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+
+  @include min-width($desktop) {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-wrapper {
+  @include flexCenter(row);
+
+  justify-content: flex-start;
+
+  .hire-me-btn {
+    padding: 0.5rem 0.9rem;
+    background-color: lighten($blue, 8%);
+    border: 1px solid $primary;
+    border-radius: 0.3rem;
+    color: $primary;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .download-cv-btn {
+    color: $primary;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 97%;
+      height: 0.1rem;
+      background-color: $primary;
+      left: 0;
+      bottom: -0.1rem;
+    }
+
+    .download-icon {
+      margin-left: -0.8rem;
+      font-size: 1.3rem;
+      transform: translateY(0.2rem);
+    }
+  }
+}
+
+.project-item-wrapper {
+  background-color: rgba($lightBlue, 0.1);
+  border-radius: 0.7rem;
+  padding: 2rem 1rem;
+  cursor: pointer;
+
+  .project-title {
+    margin: 0;
+    font-weight: bold;
+    color: $primary;
+    font-size: 1rem;
+  }
+
+  .project-details {
+    color: $lightBlue;
+  }
+
+  .project-technology-tags {
+    @include flexCenter(row);
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .project-tag {
+      background-color: rgba($lightBlue, 0.4);
+      color: lighten(#808dad, 16%);
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding: 0.2rem 0.4rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .project-links {
+    @include flexCenter(column);
+
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    a {
+      color: $white;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: $primary;
+      }
+
+      .project-link {
+        color: $primary;
+      }
+    }
+  }
+
+  .project-images-preview {
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 11rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    background-color: aqua;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include min-width($mobile) {
+    .project-images-preview {
+      height: 18rem;
+    }
+  }
+
+  @include min-width(550px) {
+    .project-images-preview {
+      height: 22rem;
+    }
+  }
+
+  @include min-width($tablet) {
+    .project-images-preview {
+      height: 16rem;
+    }
+  }
+
+  @include min-width($desktop) {
+    .project-images-preview {
+      height: 12rem;
+    }
+  }
+}
+
+.input-main-container {
+  width: 100%;
+
+  @include flexCenter(row);
+
+  align-items: flex-start;
+  margin-bottom: 1rem;
+
+  .input-wrapper {
+    flex: 1;
+
+    @include flexCenter(column);
+
+    align-items: flex-start;
+
+    .input {
+      flex: 1;
+      width: 100%;
+
+      @include flexCenter(row);
+    }
+  }
+
+  input {
+    flex: 1;
+    border: none;
+    background-color: rgba($lightBlue, 0.1);
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    color: lighten($lightBlue, 10%);
+    height: 100%;
+    padding: 1rem 1.2rem;
+  }
+}
+
+.input-error-massage {
+  color: $primary;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.textarea-input-main-container {
+  width: 100%;
+
+  @include flexCenter(row);
+
+  .input-wrapper {
+    flex: 1;
+
+    @include flexCenter(column);
+
+    align-items: flex-start;
+
+    .textarea {
+      flex: 1;
+      width: 100%;
+
+      @include flexCenter(row);
+    }
+  }
+
+  textarea {
+    flex: 1;
+    background-color: rgba($lightBlue, 0.1);
+    border: none;
+    min-height: 10rem;
+    padding: 1rem 1.2rem;
+    outline: none;
+    color: lighten($lightBlue, 10%);
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 0.3rem;
+    resize: none;
+  }
+}
+
+.submit-bnt {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  background-color: lighten($blue, 8%);
+  border: 1px solid $primary;
+  border-radius: 0.3rem;
+  color: $primary;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: lighten($blue, 10%);
+  }
+}
